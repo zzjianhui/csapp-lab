@@ -4,6 +4,6 @@
 
 
 asm_call:
-    movq $0x0000000059b997fa,%rdi
-    movq $0x00000000004017ec,(%rsp)
+    lea -24(%rsp),%rdi
+    movq $0x4018fa,(%rsp)
     retq

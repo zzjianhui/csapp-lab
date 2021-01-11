@@ -2,7 +2,7 @@
 
 int main() {
 	char a[4];
-	gets(a);
-	printf("%s\n",a);
+	char *s = a + 2;
+	printf("%.8x\n",s);
 	return 0;
 }
