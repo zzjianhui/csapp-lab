@@ -1,9 +1,3 @@
-.global asm_call
-.code64
-.section .text
-
-
-asm_call:
-    lea -24(%rsp),%rdi
-    movq $0x4018fa,(%rsp)
-    retq
+mov $0x5561dca8,%rdi
+pushq $0x4018fa
+retq
